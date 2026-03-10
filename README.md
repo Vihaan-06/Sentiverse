@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Internet Mood Map
 
-## Getting Started
+Real-time dashboard that visualizes the emotional mood of the internet globally using simulated social media sentiment data.
 
-First, run the development server:
+Built with **Next.js 14 (App Router)**, **TypeScript**, **TailwindCSS**, **Mapbox GL JS**, **Three.js**, **Socket.io**, and the **sentiment** npm package.
+
+### Features
+
+- **Real-time streaming** of simulated social posts over a single Socket.io connection.
+- **2D Map mode** (Mapbox GL JS) with a pulsing heatmap backed by GeoJSON.
+- **3D Globe mode** (Three.js) with instanced sentiment markers that fade out over time.
+- **Live activity feed** showing the latest 20 posts with sentiment, country, and timestamp.
+- **Stats panel** with global mood score, happiest/most negative country, total messages, and trending keywords.
+- **Dark, futuristic dashboard UI** with glow accents, skeleton loaders, and subtle animations.
+
+### Getting started
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create an `.env.local` file at the project root (or copy from `.env.example`) and set your Mapbox token:
+
+```bash
+cp .env.example .env.local
+# then edit .env.local
+NEXT_PUBLIC_MAPBOX_TOKEN=your_real_mapbox_token
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **App Router**: main UI under `src/app` (`layout.tsx`, `page.tsx`).
+- **Components**: presentational and interactive components in `src/components`:
+  - `MapView`, `GlobeView`, `ActivityFeed`, `StatsPanel`, `SentimentBadge`, `ViewToggle`.
+- **Lib**: core logic in `src/lib`:
+  - `sentiment.ts` – wraps the `sentiment` package.
+  - `postGenerator.ts` – fake social post generator with countries and coordinates.
+  - `aggregation.ts` – server-side aggregation of sentiment and GeoJSON builder.
+- **Backend streaming**:
+  - `src/pages/api/stream.ts` – Socket.io server that emits a new analyzed post every 1–2 seconds, plus aggregated stats and GeoJSON.
 
-## Learn More
+### Performance notes
 
-To learn more about Next.js, take a look at the following resources:
+- Mapbox map is initialized only once and updated via `map.getSource("sentiment").setData(newGeoJSON)`.
+- Globe markers use `InstancedMesh` with a cap of 500 markers, reusing instances.
+- UI updates are debounced to **every 500ms** and large datasets live in `useRef` instead of React state.
+- Only one Socket.io connection is created (in a `useEffect` with an empty dependency array) and cleaned up on unmount.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
