@@ -1,7 +1,7 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import { io, Socket } from "socket.io-client";
 import type { FeatureCollection } from "geojson";
 import ActivityFeed from "@/components/ActivityFeed";
@@ -9,26 +9,18 @@ import StatsPanel from "@/components/StatsPanel";
 import ViewToggle from "@/components/ViewToggle";
 import type { AggregatedStats, RawSentimentPost } from "@/lib/aggregation";
 
-type ViewMode = "map" | "globe";
-
 type ServerEventPayload = {
   post: RawSentimentPost;
   stats: AggregatedStats;
   geoJson: FeatureCollection;
 };
 
-const MapView = dynamic(() => import("@/components/MapView"), {
-  ssr: false,
-});
-
-const GlobeView = dynamic(() => import("@/components/GlobeView"), {
-  ssr: false,
-});
+import dynamic from "next/dynamic";
+const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 
 const SOCKET_EVENT = "sentiment_update";
 
 export default function Home() {
-  const [viewMode, setViewMode] = useState<ViewMode>("map");
   const [connected, setConnected] = useState(false);
   const [uiPosts, setUiPosts] = useState<RawSentimentPost[]>([]);
   const [uiStats, setUiStats] = useState<AggregatedStats | null>(null);
@@ -80,8 +72,6 @@ export default function Home() {
       }, 500 - elapsed);
     }
   };
-
-  const getLatestPosts = useCallback(() => allPostsRef.current, []);
 
   useEffect(() => {
     if (socketRef.current) return;
@@ -139,15 +129,20 @@ export default function Home() {
   return (
     <main className="min-h-screen px-4 py-6 md:px-8 md:py-8 bg-gradient-to-br from-black via-[#050510] to-[#020617]">
       <div className="mx-auto flex max-w-7xl flex-col gap-6">
-        <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl">
-              Internet Mood Map
-            </h1>
-            <p className="mt-1 text-sm text-zinc-400 md:text-base">
-              Real-time visualization of global social sentiment, rendered in a
-              sleek dark dashboard.
-            </p>
+        <header className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo.svg"
+              alt="Sentiverse logo"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+            />
+          </div>
+          <div className="flex-1 text-center">
+            <span className="text-sm font-semibold tracking-wide text-zinc-100">
+              Sentiverse
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <div
@@ -164,17 +159,22 @@ export default function Home() {
               />
               {connected ? "Streaming live mood data" : "Connecting…"}
             </div>
-            <ViewToggle mode={viewMode} onChange={setViewMode} />
+            <ViewToggle />
           </div>
         </header>
 
+        <section className="mt-4 text-center">
+          <h1 className="text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl">
+            Internet Mood Map
+          </h1>
+          <p className="mt-1 text-sm text-zinc-400 md:text-base">
+            See How the World Feels Right Now
+          </p>
+        </section>
+
         <section className="dashboard-grid">
           <div className="glass-panel relative flex min-h-[360px] flex-col overflow-hidden">
-            {viewMode === "map" ? (
-              <MapView geoJson={geoSnapshot} />
-            ) : (
-              <GlobeView getLatestPosts={getLatestPosts} />
-            )}
+            <MapView geoJson={geoSnapshot} />
           </div>
 
           <div className="glass-panel flex min-h-[360px] flex-col overflow-hidden">

@@ -448,6 +448,10 @@
     margin-top: calc(var(--spacing) * 2);
   }
 
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -483,6 +487,10 @@
     height: calc(var(--spacing) * 2);
   }
 
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -513,6 +521,10 @@
 
   .w-2 {
     width: calc(var(--spacing) * 2);
+  }
+
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
 
   .w-full {
@@ -728,10 +740,6 @@
     }
   }
 
-  .bg-sky-400 {
-    background-color: var(--color-sky-400);
-  }
-
   .bg-sky-400\/80 {
     background-color: #00bcfecc;
   }
@@ -749,16 +757,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-sky-500\/15 {
       background-color: color-mix(in oklab, var(--color-sky-500) 15%, transparent);
-    }
-  }
-
-  .bg-sky-500\/20 {
-    background-color: #00a5ef33;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-sky-500\/20 {
-      background-color: color-mix(in oklab, var(--color-sky-500) 20%, transparent);
     }
   }
 
@@ -883,6 +881,10 @@
 
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
+  }
+
+  .text-center {
+    text-align: center;
   }
 
   .text-2xl {
@@ -1025,11 +1027,6 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
-  .shadow-\[0_0_18px_rgba\(56\,189\,248\,0\.6\)\] {
-    --tw-shadow: 0 0 18px var(--tw-shadow-color, #38bdf899);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
   .shadow-\[0_0_24px_rgba\(59\,130\,246\,0\.35\)\] {
     --tw-shadow: 0 0 24px var(--tw-shadow-color, #3b82f659);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1148,12 +1145,6 @@
     }
   }
 
-  @media (hover: hover) {
-    .hover\:text-zinc-200:hover {
-      color: var(--color-zinc-200);
-    }
-  }
-
   @media (min-width: 48rem) {
     .md\:flex-row {
       flex-direction: row;
@@ -1181,6 +1172,12 @@
   @media (min-width: 48rem) {
     .md\:py-8 {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:text-center {
+      text-align: center;
     }
   }
 

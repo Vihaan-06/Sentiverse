@@ -2,13 +2,12 @@
 
 Real-time dashboard that visualizes the emotional mood of the internet globally using simulated social media sentiment data.
 
-Built with **Next.js 14 (App Router)**, **TypeScript**, **TailwindCSS**, **Mapbox GL JS**, **Three.js**, **Socket.io**, and the **sentiment** npm package.
+Built with **Next.js 14 (App Router)**, **TypeScript**, **TailwindCSS**, **MapLibre GL JS**, **Socket.io**, and the **sentiment** npm package.
 
 ### Features
 
 - **Real-time streaming** of simulated social posts over a single Socket.io connection.
-- **2D Map mode** (Mapbox GL JS) with a pulsing heatmap backed by GeoJSON.
-- **3D Globe mode** (Three.js) with instanced sentiment markers that fade out over time.
+- **2D Map** (MapLibre GL JS + OpenStreetMap tiles) with mood bubbles sized and colored by sentiment intensity.
 - **Live activity feed** showing the latest 20 posts with sentiment, country, and timestamp.
 - **Stats panel** with global mood score, happiest/most negative country, total messages, and trending keywords.
 - **Dark, futuristic dashboard UI** with glow accents, skeleton loaders, and subtle animations.
