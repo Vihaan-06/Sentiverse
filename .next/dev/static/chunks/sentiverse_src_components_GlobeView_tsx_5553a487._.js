@@ -22,11 +22,11 @@ const MARKER_LIFETIME = 5000;
 const GlobeView = (t0)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "6b44f8d8024b325218ad65d2d98ce8606bdb253f140429c90ef9b84e3168a58a") {
+    if ($[0] !== "fb94220e38ab9d464ead271a8c0622a718c568955ea68c1cf9b0d3de2a9c1c22") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6b44f8d8024b325218ad65d2d98ce8606bdb253f140429c90ef9b84e3168a58a";
+        $[0] = "fb94220e38ab9d464ead271a8c0622a718c568955ea68c1cf9b0d3de2a9c1c22";
     }
     const { getLatestPosts } = t0;
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);

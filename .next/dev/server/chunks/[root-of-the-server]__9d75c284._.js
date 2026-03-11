@@ -163,12 +163,14 @@ const extractKeywords = (text)=>{
         ].includes(token));
 };
 const updateAggregation = (post)=>{
-    const { country, sentimentScore, text } = post;
+    const { country, sentimentScore, text, coordinates } = post;
     const existing = countryAggregates[country] ?? {
         country,
+        coordinates,
         totalScore: 0,
         count: 0
     };
+    existing.coordinates = coordinates;
     existing.totalScore += sentimentScore;
     existing.count += 1;
     countryAggregates[country] = existing;
@@ -228,10 +230,7 @@ const buildGeoJsonFromCountries = ()=>{
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [
-                    0,
-                    0
-                ]
+                coordinates: agg.coordinates
             },
             properties: {
                 country: agg.country,

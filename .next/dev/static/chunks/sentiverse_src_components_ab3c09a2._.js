@@ -3,7 +3,7 @@
 
 __turbopack_context__.v((parentImport) => {
     return Promise.all([
-  "static/chunks/cf3fa_mapbox-gl_dist_mapbox-gl_29685c0b.js",
+  "static/chunks/cf3fa_maplibre-gl_dist_maplibre-gl_ccaf4858.js",
   "static/chunks/sentiverse_src_components_MapView_tsx_49db4e01._.js",
   "static/chunks/sentiverse_src_components_MapView_tsx_64683150._.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {

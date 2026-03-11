@@ -1,4 +1,749 @@
-[00:00:10.755] Server  LOG     ✓ Ready in 7.2s
-[00:00:14.132] Server  LOG     ○ Compiling / ...
-[00:00:30.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:31.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.039] Server  LOG     ✓ Ready in 1487ms
+[00:06:34.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:33.352] Browser LOG     [ChromeTransport] chromePort disconnected
+[01:35:10.142] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:26.472] Server  LOG     ✓ Compiled in 358ms
+[01:47:49.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:27:49.924] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.929] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.935] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.937] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.942] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.944] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.949] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.954] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.957] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.960] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.964] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.966] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.970] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.973] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.977] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.980] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.983] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.986] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.990] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.993] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.995] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:49.997] Server  ERROR   ⨯ ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:27:50.001] Server  LOG     ✓ Compiled in 579ms
+[02:27:50.677] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:50.678] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:52.670] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:53.664] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:53.664] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:54.672] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:56.666] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:56.666] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:56.666] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:27:56.666] Browser ERROR   ./sentiverse/src/components/MapView.tsx:4:1
+Module not found: Can't resolve 'mapbox-gl'
+  2 |
+  3 | import { useEffect, useRef } from "react";
+> 4 | import mapboxgl, { Map } from "mapbox-gl";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { FeatureCollection } from "geojson";
+  6 |
+  7 | const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+
+Import trace:
+  Client Component Browser:
+    ./sentiverse/src/components/MapView.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Client Component Browser]
+    ./sentiverse/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:28:10.591] Server  LOG     ✓ Compiled in 1774ms
+[02:28:12.086] Server  LOG     ✓ Compiled in 761ms
+[03:29:23.334] Server  LOG     ✓ Compiled in 438ms
+[03:31:41.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:34:07.000] Server  LOG     ✓ Compiled in 240ms
+[03:34:59.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:53.164] Server  LOG     ✓ Compiled in 216ms
+[03:37:23.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

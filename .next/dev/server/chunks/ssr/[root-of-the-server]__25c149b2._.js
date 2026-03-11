@@ -804,7 +804,6 @@ function Home() {
     const [connected, setConnected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [uiPosts, setUiPosts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [uiStats, setUiStats] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [geoVersion, setGeoVersion] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [geoSnapshot, setGeoSnapshot] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         type: "FeatureCollection",
         features: []
@@ -834,7 +833,6 @@ function Home() {
             lastUpdateRef.current = now;
             setUiPosts(allPostsRef.current.slice());
             setUiStats(statsRef.current);
-            setGeoVersion((v)=>v + 1);
             setGeoSnapshot(geoJsonRef.current);
             return;
         }
@@ -844,11 +842,11 @@ function Home() {
                 updateTimeoutRef.current = null;
                 setUiPosts(allPostsRef.current.slice());
                 setUiStats(statsRef.current);
-                setGeoVersion((v)=>v + 1);
                 setGeoSnapshot(geoJsonRef.current);
             }, 500 - elapsed);
         }
     };
+    const getLatestPosts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>allPostsRef.current, []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (socketRef.current) return;
         let isActive = true;
@@ -860,30 +858,33 @@ function Home() {
             // ignore; the socket connection will surface errors if any
             }
             if (!isActive) return;
-            const socket1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2d$debug$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])({
+            const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2d$debug$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])({
                 path: "/api/stream",
                 transports: [
                     "websocket",
                     "polling"
                 ]
             });
-            socketRef.current = socket1;
-            socket1.on("connect", ()=>{
+            socketRef.current = socket;
+            socket.on("connect", ()=>{
                 setConnected(true);
             });
-            socket1.on("disconnect", ()=>{
+            socket.on("disconnect", ()=>{
                 setConnected(false);
             });
-            socket1.on("connect_error", ()=>{
+            socket.on("connect_error", ()=>{
                 setConnected(false);
             });
-            socket1.on(SOCKET_EVENT, handleServerEvent);
+            socket.on(SOCKET_EVENT, handleServerEvent);
         };
         void init();
         return ()=>{
             isActive = false;
-            socket.off(SOCKET_EVENT, handleServerEvent);
-            socket.disconnect();
+            const socket = socketRef.current;
+            if (socket) {
+                socket.off(SOCKET_EVENT, handleServerEvent);
+                socket.disconnect();
+            }
             socketRef.current = null;
             if (updateTimeoutRef.current) {
                 clearTimeout(updateTimeoutRef.current);
@@ -905,7 +906,7 @@ function Home() {
                                     children: "Internet Mood Map"
                                 }, void 0, false, {
                                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 144,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -913,13 +914,13 @@ function Home() {
                                     children: "Real-time visualization of global social sentiment, rendered in a sleek dark dashboard."
                                 }, void 0, false, {
                                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                            lineNumber: 141,
+                            lineNumber: 143,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -932,14 +933,14 @@ function Home() {
                                             className: `h-2 w-2 rounded-full ${connected ? "bg-emerald-400 animate-pulse" : "bg-zinc-500"}`
                                         }, void 0, false, {
                                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 160,
                                             columnNumber: 15
                                         }, this),
                                         connected ? "Streaming live mood data" : "Connecting…"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$components$2f$ViewToggle$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -947,19 +948,19 @@ function Home() {
                                     onChange: setViewMode
                                 }, void 0, false, {
                                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 167,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                            lineNumber: 150,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                    lineNumber: 140,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -969,20 +970,20 @@ function Home() {
                             className: "glass-panel relative flex min-h-[360px] flex-col overflow-hidden",
                             children: viewMode === "map" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MapView, {
                                 geoJson: geoSnapshot
-                            }, geoVersion, false, {
-                                fileName: "[project]/sentiverse/src/app/page.tsx",
-                                lineNumber: 172,
-                                columnNumber: 15
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GlobeView, {
-                                getLatestPosts: ()=>allPostsRef.current
                             }, void 0, false, {
                                 fileName: "[project]/sentiverse/src/app/page.tsx",
                                 lineNumber: 174,
                                 columnNumber: 15
+                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GlobeView, {
+                                getLatestPosts: getLatestPosts
+                            }, void 0, false, {
+                                fileName: "[project]/sentiverse/src/app/page.tsx",
+                                lineNumber: 176,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                            lineNumber: 170,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -992,12 +993,12 @@ function Home() {
                                 isLoading: !uiPosts.length
                             }, void 0, false, {
                                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                                lineNumber: 179,
+                                lineNumber: 181,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                            lineNumber: 178,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1007,29 +1008,29 @@ function Home() {
                                 isLoading: !uiStats
                             }, void 0, false, {
                                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                                lineNumber: 183,
+                                lineNumber: 185,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/sentiverse/src/app/page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                    lineNumber: 169,
+                    lineNumber: 171,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 139,
+            lineNumber: 141,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/sentiverse/src/app/page.tsx",
-        lineNumber: 138,
+        lineNumber: 140,
         columnNumber: 5
     }, this);
 }

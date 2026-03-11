@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { io, Socket } from "socket.io-client";
 import type { FeatureCollection } from "geojson";
@@ -32,7 +32,6 @@ export default function Home() {
   const [connected, setConnected] = useState(false);
   const [uiPosts, setUiPosts] = useState<RawSentimentPost[]>([]);
   const [uiStats, setUiStats] = useState<AggregatedStats | null>(null);
-  const [geoVersion, setGeoVersion] = useState(0);
   const [geoSnapshot, setGeoSnapshot] = useState<FeatureCollection>({
     type: "FeatureCollection",
     features: [],
@@ -67,7 +66,6 @@ export default function Home() {
       lastUpdateRef.current = now;
       setUiPosts(allPostsRef.current.slice());
       setUiStats(statsRef.current);
-      setGeoVersion((v) => v + 1);
       setGeoSnapshot(geoJsonRef.current);
       return;
     }
@@ -78,11 +76,12 @@ export default function Home() {
         updateTimeoutRef.current = null;
         setUiPosts(allPostsRef.current.slice());
         setUiStats(statsRef.current);
-        setGeoVersion((v) => v + 1);
         setGeoSnapshot(geoJsonRef.current);
       }, 500 - elapsed);
     }
   };
+
+  const getLatestPosts = useCallback(() => allPostsRef.current, []);
 
   useEffect(() => {
     if (socketRef.current) return;
@@ -125,8 +124,11 @@ export default function Home() {
 
     return () => {
       isActive = false;
-      socket.off(SOCKET_EVENT, handleServerEvent);
-      socket.disconnect();
+      const socket = socketRef.current;
+      if (socket) {
+        socket.off(SOCKET_EVENT, handleServerEvent);
+        socket.disconnect();
+      }
       socketRef.current = null;
       if (updateTimeoutRef.current) {
         clearTimeout(updateTimeoutRef.current);
@@ -169,9 +171,9 @@ export default function Home() {
         <section className="dashboard-grid">
           <div className="glass-panel relative flex min-h-[360px] flex-col overflow-hidden">
             {viewMode === "map" ? (
-              <MapView key={geoVersion} geoJson={geoSnapshot} />
+              <MapView geoJson={geoSnapshot} />
             ) : (
-              <GlobeView getLatestPosts={() => allPostsRef.current} />
+              <GlobeView getLatestPosts={getLatestPosts} />
             )}
           </div>
 

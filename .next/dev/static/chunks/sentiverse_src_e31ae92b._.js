@@ -30,11 +30,11 @@ const SENTIMENT_CONFIG = {
 };
 const SentimentBadge = (t0)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "25b2608845e635ce5e5bf2350c3e28067adc10fca6cd580fedd8ce7b143984a0") {
+    if ($[0] !== "7d54597c2245a0ab247e51d40d0e2b297566234e6a4e6a90ea6f676d2812e1b9") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "25b2608845e635ce5e5bf2350c3e28067adc10fca6cd580fedd8ce7b143984a0";
+        $[0] = "7d54597c2245a0ab247e51d40d0e2b297566234e6a4e6a90ea6f676d2812e1b9";
     }
     const { sentiment } = t0;
     const config = SENTIMENT_CONFIG[sentiment];
@@ -117,11 +117,11 @@ var _s = __turbopack_context__.k.signature();
 const ActivityFeed = (t0)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(17);
-    if ($[0] !== "bd2fd67d37fe0243e6d0729b1dcc663aa840c36594e2d20665ebe981b563c99f") {
+    if ($[0] !== "e477251e189094d85c8dffef6c9196f668a6bd6934b1ab29b7700883c4e9630b") {
         for(let $i = 0; $i < 17; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "bd2fd67d37fe0243e6d0729b1dcc663aa840c36594e2d20665ebe981b563c99f";
+        $[0] = "e477251e189094d85c8dffef6c9196f668a6bd6934b1ab29b7700883c4e9630b";
     }
     const { posts, isLoading } = t0;
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -406,11 +406,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$compone
 ;
 const AnimatedCounter = (t0)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "405f10ae94913e0d90257c20c8860c5db1b73337d272f89330382d79b540cb3b") {
+    if ($[0] !== "d47e0ee879cf779322736e3ce6674ebb50de4e114246feab3476bf596b954252") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "405f10ae94913e0d90257c20c8860c5db1b73337d272f89330382d79b540cb3b";
+        $[0] = "d47e0ee879cf779322736e3ce6674ebb50de4e114246feab3476bf596b954252";
     }
     const { value, suffix } = t0;
     let t1;
@@ -462,11 +462,11 @@ const AnimatedCounter = (t0)=>{
 _c = AnimatedCounter;
 const StatsPanel = (t0)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "405f10ae94913e0d90257c20c8860c5db1b73337d272f89330382d79b540cb3b") {
+    if ($[0] !== "d47e0ee879cf779322736e3ce6674ebb50de4e114246feab3476bf596b954252") {
         for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "405f10ae94913e0d90257c20c8860c5db1b73337d272f89330382d79b540cb3b";
+        $[0] = "d47e0ee879cf779322736e3ce6674ebb50de4e114246feab3476bf596b954252";
     }
     const { stats, isLoading } = t0;
     let t1;
@@ -817,11 +817,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2
 ;
 const ViewToggle = (t0)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(16);
-    if ($[0] !== "2c16ff404365bd80416edc452eb6b6c4fc8f5424d85a702f98a8a48fdfa3367e") {
+    if ($[0] !== "70f7c1145bdabd28b98127483a3569500833833ba00fc15e835a8a366e6cd54e") {
         for(let $i = 0; $i < 16; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2c16ff404365bd80416edc452eb6b6c4fc8f5424d85a702f98a8a48fdfa3367e";
+        $[0] = "70f7c1145bdabd28b98127483a3569500833833ba00fc15e835a8a366e6cd54e";
     }
     const { mode, onChange } = t0;
     let t1;
@@ -988,11 +988,11 @@ const SOCKET_EVENT = "sentiment_update";
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(37);
-    if ($[0] !== "818691d41079f906a749ae3eb844d68f94f051c447f5b9671545c814f5a235ef") {
+    if ($[0] !== "9aa1aa48c9977e617d6ddbfa9a75e1de46d9e38ec88c22d5536f369c2833ecfd") {
         for(let $i = 0; $i < 37; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "818691d41079f906a749ae3eb844d68f94f051c447f5b9671545c814f5a235ef";
+        $[0] = "9aa1aa48c9977e617d6ddbfa9a75e1de46d9e38ec88c22d5536f369c2833ecfd";
     }
     const [viewMode, setViewMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("map");
     const [connected, setConnected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -1005,7 +1005,6 @@ function Home() {
     }
     const [uiPosts, setUiPosts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
     const [uiStats, setUiStats] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [geoVersion, setGeoVersion] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = {
@@ -1059,7 +1058,6 @@ function Home() {
                     lastUpdateRef.current = now;
                     setUiPosts(allPostsRef.current.slice());
                     setUiStats(statsRef.current);
-                    setGeoVersion(_HomeHandleServerEventSetGeoVersion);
                     setGeoSnapshot(geoJsonRef.current);
                     return;
                 }
@@ -1070,7 +1068,6 @@ function Home() {
                             updateTimeoutRef.current = null;
                             setUiPosts(allPostsRef.current.slice());
                             setUiStats(statsRef.current);
-                            setGeoVersion(_HomeHandleServerEventSetTimeoutSetGeoVersion);
                             setGeoSnapshot(geoJsonRef.current);
                         }
                     }["Home[handleServerEvent > setTimeout()]"], 500 - elapsed);
@@ -1083,9 +1080,19 @@ function Home() {
     }
     const handleServerEvent = t4;
     let t5;
-    let t6;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = ({
+            "Home[getLatestPosts]": ()=>allPostsRef.current
+        })["Home[getLatestPosts]"];
+        $[6] = t5;
+    } else {
+        t5 = $[6];
+    }
+    const getLatestPosts = t5;
+    let t6;
+    let t7;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = ({
             "Home[useEffect()]": ()=>{
                 if (socketRef.current) {
                     return;
@@ -1099,37 +1106,40 @@ function Home() {
                         if (!isActive) {
                             return;
                         }
-                        const socket$0 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])({
+                        const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["io"])({
                             path: "/api/stream",
                             transports: [
                                 "websocket",
                                 "polling"
                             ]
                         });
-                        socketRef.current = socket$0;
-                        socket$0.on("connect", {
+                        socketRef.current = socket;
+                        socket.on("connect", {
                             "Home[useEffect() > init > socket.on()]": ()=>{
                                 setConnected(true);
                             }
                         }["Home[useEffect() > init > socket.on()]"]);
-                        socket$0.on("disconnect", {
+                        socket.on("disconnect", {
                             "Home[useEffect() > init > socket.on()]": ()=>{
                                 setConnected(false);
                             }
                         }["Home[useEffect() > init > socket.on()]"]);
-                        socket$0.on("connect_error", {
+                        socket.on("connect_error", {
                             "Home[useEffect() > init > socket.on()]": ()=>{
                                 setConnected(false);
                             }
                         }["Home[useEffect() > init > socket.on()]"]);
-                        socket$0.on(SOCKET_EVENT, handleServerEvent);
+                        socket.on(SOCKET_EVENT, handleServerEvent);
                     }
                 }["Home[useEffect() > init]"];
                 init();
                 return ()=>{
                     isActive = false;
-                    socket.off(SOCKET_EVENT, handleServerEvent);
-                    socket.disconnect();
+                    const socket_0 = socketRef.current;
+                    if (socket_0) {
+                        socket_0.off(SOCKET_EVENT, handleServerEvent);
+                        socket_0.disconnect();
+                    }
                     socketRef.current = null;
                     if (updateTimeoutRef.current) {
                         clearTimeout(updateTimeoutRef.current);
@@ -1137,24 +1147,24 @@ function Home() {
                 };
             }
         })["Home[useEffect()]"];
-        t6 = [];
-        $[6] = t5;
+        t7 = [];
         $[7] = t6;
+        $[8] = t7;
     } else {
-        t5 = $[6];
         t6 = $[7];
+        t7 = $[8];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t5, t6);
-    let t7;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t6, t7);
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     className: "text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl",
                     children: "Internet Mood Map"
                 }, void 0, false, {
                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                    lineNumber: 180,
+                    lineNumber: 190,
                     columnNumber: 15
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1162,236 +1172,227 @@ function Home() {
                     children: "Real-time visualization of global social sentiment, rendered in a sleek dark dashboard."
                 }, void 0, false, {
                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                    lineNumber: 180,
+                    lineNumber: 190,
                     columnNumber: 116
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 180,
+            lineNumber: 190,
             columnNumber: 10
         }, this);
-        $[8] = t7;
+        $[9] = t8;
     } else {
-        t7 = $[8];
+        t8 = $[9];
     }
-    const t8 = `flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${connected ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-emerald-500/40" : "bg-zinc-800/80 text-zinc-300 ring-1 ring-zinc-700"}`;
-    const t9 = `h-2 w-2 rounded-full ${connected ? "bg-emerald-400 animate-pulse" : "bg-zinc-500"}`;
-    let t10;
-    if ($[9] !== t9) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: t9
+    const t9 = `flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${connected ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-emerald-500/40" : "bg-zinc-800/80 text-zinc-300 ring-1 ring-zinc-700"}`;
+    const t10 = `h-2 w-2 rounded-full ${connected ? "bg-emerald-400 animate-pulse" : "bg-zinc-500"}`;
+    let t11;
+    if ($[10] !== t10) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: t10
         }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 189,
+            lineNumber: 199,
             columnNumber: 11
         }, this);
-        $[9] = t9;
         $[10] = t10;
+        $[11] = t11;
     } else {
-        t10 = $[10];
+        t11 = $[11];
     }
-    const t11 = connected ? "Streaming live mood data" : "Connecting\u2026";
-    let t12;
-    if ($[11] !== t10 || $[12] !== t11 || $[13] !== t8) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: t8,
+    const t12 = connected ? "Streaming live mood data" : "Connecting\u2026";
+    let t13;
+    if ($[12] !== t11 || $[13] !== t12 || $[14] !== t9) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t9,
             children: [
-                t10,
-                t11
+                t11,
+                t12
             ]
         }, void 0, true, {
-            fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 198,
-            columnNumber: 11
-        }, this);
-        $[11] = t10;
-        $[12] = t11;
-        $[13] = t8;
-        $[14] = t12;
-    } else {
-        t12 = $[14];
-    }
-    let t13;
-    if ($[15] !== viewMode) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$components$2f$ViewToggle$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            mode: viewMode,
-            onChange: setViewMode
-        }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
             lineNumber: 208,
             columnNumber: 11
         }, this);
-        $[15] = viewMode;
-        $[16] = t13;
+        $[12] = t11;
+        $[13] = t12;
+        $[14] = t9;
+        $[15] = t13;
     } else {
-        t13 = $[16];
+        t13 = $[15];
     }
     let t14;
-    if ($[17] !== t12 || $[18] !== t13) {
-        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+    if ($[16] !== viewMode) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$components$2f$ViewToggle$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            mode: viewMode,
+            onChange: setViewMode
+        }, void 0, false, {
+            fileName: "[project]/sentiverse/src/app/page.tsx",
+            lineNumber: 218,
+            columnNumber: 11
+        }, this);
+        $[16] = viewMode;
+        $[17] = t14;
+    } else {
+        t14 = $[17];
+    }
+    let t15;
+    if ($[18] !== t13 || $[19] !== t14) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
             className: "flex flex-col gap-4 md:flex-row md:items-center md:justify-between",
             children: [
-                t7,
+                t8,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center gap-4",
                     children: [
-                        t12,
-                        t13
+                        t13,
+                        t14
                     ]
                 }, void 0, true, {
                     fileName: "[project]/sentiverse/src/app/page.tsx",
-                    lineNumber: 216,
+                    lineNumber: 226,
                     columnNumber: 102
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 216,
+            lineNumber: 226,
             columnNumber: 11
         }, this);
-        $[17] = t12;
         $[18] = t13;
         $[19] = t14;
+        $[20] = t15;
     } else {
-        t14 = $[19];
+        t15 = $[20];
     }
-    let t15;
-    if ($[20] !== geoSnapshot || $[21] !== geoVersion || $[22] !== viewMode) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t16;
+    if ($[21] !== geoSnapshot || $[22] !== viewMode) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "glass-panel relative flex min-h-[360px] flex-col overflow-hidden",
             children: viewMode === "map" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapView, {
                 geoJson: geoSnapshot
-            }, geoVersion, false, {
-                fileName: "[project]/sentiverse/src/app/page.tsx",
-                lineNumber: 225,
-                columnNumber: 115
-            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GlobeView, {
-                getLatestPosts: {
-                    "Home[<GlobeView>.getLatestPosts]": ()=>allPostsRef.current
-                }["Home[<GlobeView>.getLatestPosts]"]
             }, void 0, false, {
                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                lineNumber: 225,
-                columnNumber: 168
+                lineNumber: 235,
+                columnNumber: 115
+            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GlobeView, {
+                getLatestPosts: getLatestPosts
+            }, void 0, false, {
+                fileName: "[project]/sentiverse/src/app/page.tsx",
+                lineNumber: 235,
+                columnNumber: 151
             }, this)
         }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 225,
+            lineNumber: 235,
             columnNumber: 11
         }, this);
-        $[20] = geoSnapshot;
-        $[21] = geoVersion;
+        $[21] = geoSnapshot;
         $[22] = viewMode;
-        $[23] = t15;
+        $[23] = t16;
     } else {
-        t15 = $[23];
+        t16 = $[23];
     }
-    const t16 = !uiPosts.length;
-    let t17;
-    if ($[24] !== t16 || $[25] !== uiPosts) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    const t17 = !uiPosts.length;
+    let t18;
+    if ($[24] !== t17 || $[25] !== uiPosts) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "glass-panel flex min-h-[360px] flex-col overflow-hidden",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$components$2f$ActivityFeed$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 posts: uiPosts,
-                isLoading: t16
+                isLoading: t17
             }, void 0, false, {
                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                lineNumber: 238,
+                lineNumber: 245,
                 columnNumber: 84
             }, this)
         }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 238,
+            lineNumber: 245,
             columnNumber: 11
         }, this);
-        $[24] = t16;
+        $[24] = t17;
         $[25] = uiPosts;
-        $[26] = t17;
+        $[26] = t18;
     } else {
-        t17 = $[26];
+        t18 = $[26];
     }
-    const t18 = !uiStats;
-    let t19;
-    if ($[27] !== t18 || $[28] !== uiStats) {
-        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    const t19 = !uiStats;
+    let t20;
+    if ($[27] !== t19 || $[28] !== uiStats) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "glass-panel flex min-h-[360px] flex-col overflow-hidden",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$src$2f$components$2f$StatsPanel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 stats: uiStats,
-                isLoading: t18
+                isLoading: t19
             }, void 0, false, {
                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                lineNumber: 248,
+                lineNumber: 255,
                 columnNumber: 84
             }, this)
         }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 248,
+            lineNumber: 255,
             columnNumber: 11
         }, this);
-        $[27] = t18;
+        $[27] = t19;
         $[28] = uiStats;
-        $[29] = t19;
+        $[29] = t20;
     } else {
-        t19 = $[29];
+        t20 = $[29];
     }
-    let t20;
-    if ($[30] !== t15 || $[31] !== t17 || $[32] !== t19) {
-        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    let t21;
+    if ($[30] !== t16 || $[31] !== t18 || $[32] !== t20) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "dashboard-grid",
             children: [
-                t15,
-                t17,
-                t19
+                t16,
+                t18,
+                t20
             ]
         }, void 0, true, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 257,
+            lineNumber: 264,
             columnNumber: 11
         }, this);
-        $[30] = t15;
-        $[31] = t17;
-        $[32] = t19;
-        $[33] = t20;
+        $[30] = t16;
+        $[31] = t18;
+        $[32] = t20;
+        $[33] = t21;
     } else {
-        t20 = $[33];
+        t21 = $[33];
     }
-    let t21;
-    if ($[34] !== t14 || $[35] !== t20) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+    let t22;
+    if ($[34] !== t15 || $[35] !== t21) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
             className: "min-h-screen px-4 py-6 md:px-8 md:py-8 bg-gradient-to-br from-black via-[#050510] to-[#020617]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$sentiverse$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mx-auto flex max-w-7xl flex-col gap-6",
                 children: [
-                    t14,
-                    t20
+                    t15,
+                    t21
                 ]
             }, void 0, true, {
                 fileName: "[project]/sentiverse/src/app/page.tsx",
-                lineNumber: 267,
+                lineNumber: 274,
                 columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/sentiverse/src/app/page.tsx",
-            lineNumber: 267,
+            lineNumber: 274,
             columnNumber: 11
         }, this);
-        $[34] = t14;
-        $[35] = t20;
-        $[36] = t21;
+        $[34] = t15;
+        $[35] = t21;
+        $[36] = t22;
     } else {
-        t21 = $[36];
+        t22 = $[36];
     }
-    return t21;
+    return t22;
 }
-_s(Home, "sNobIS/6+ZzAAyDPjQYUuIGKAw0=");
+_s(Home, "ACu6WAJEJfkh7N7A6RKfHfVS7do=");
 _c2 = Home;
-function _HomeHandleServerEventSetTimeoutSetGeoVersion(v_0) {
-    return v_0 + 1;
-}
-function _HomeHandleServerEventSetGeoVersion(v) {
-    return v + 1;
-}
 var _c, _c1, _c2;
 __turbopack_context__.k.register(_c, "MapView");
 __turbopack_context__.k.register(_c1, "GlobeView");

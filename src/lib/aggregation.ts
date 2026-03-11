@@ -12,6 +12,7 @@ export type RawSentimentPost = {
 
 export type CountryAggregate = {
   country: string;
+  coordinates: [number, number];
   totalScore: number;
   count: number;
 };
@@ -49,13 +50,15 @@ const extractKeywords = (text: string): string[] => {
 };
 
 export const updateAggregation = (post: RawSentimentPost): AggregatedStats => {
-  const { country, sentimentScore, text } = post;
+  const { country, sentimentScore, text, coordinates } = post;
 
   const existing = countryAggregates[country] ?? {
     country,
+    coordinates,
     totalScore: 0,
     count: 0,
   };
+  existing.coordinates = coordinates;
   existing.totalScore += sentimentScore;
   existing.count += 1;
   countryAggregates[country] = existing;
@@ -126,7 +129,7 @@ export const buildGeoJsonFromCountries = () => {
       type: "Feature" as const,
       geometry: {
         type: "Point" as const,
-        coordinates: [0, 0],
+        coordinates: agg.coordinates,
       },
       properties: {
         country: agg.country,

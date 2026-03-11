@@ -1,11 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import mapboxgl, { Map } from "mapbox-gl";
+import maplibregl, { Map } from "maplibre-gl";
 import type { FeatureCollection } from "geojson";
-
-mapboxgl.accessToken =
-  process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "YOUR_MAPBOX_TOKEN_HERE";
 
 type Props = {
   geoJson: FeatureCollection;
@@ -14,19 +11,37 @@ type Props = {
 const MapView = ({ geoJson }: Props) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<Map | null>(null);
-  const initializedRef = useRef(false);
 
   useEffect(() => {
-    if (initializedRef.current) return;
     const container = containerRef.current;
     if (!container) return;
-    if (!mapboxgl.accessToken || mapboxgl.accessToken === "YOUR_MAPBOX_TOKEN_HERE") {
-      return;
-    }
+    if (mapRef.current) return;
 
-    const map = new mapboxgl.Map({
+    const map = new maplibregl.Map({
       container,
-      style: "mapbox://styles/mapbox/dark-v11",
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: "raster",
+            tiles: [
+              "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            ],
+            tileSize: 256,
+            attribution:
+              '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          },
+        },
+        layers: [
+          {
+            id: "osm-base",
+            type: "raster",
+            source: "osm",
+          },
+        ],
+      },
       center: [0, 20],
       zoom: 1.2,
       attributionControl: false,
@@ -41,53 +56,49 @@ const MapView = ({ geoJson }: Props) => {
       });
 
       map.addLayer({
-        id: "sentiment-heat",
-        type: "heatmap",
+        id: "sentiment-bubbles",
+        type: "circle",
         source: "sentiment",
         paint: {
-          "heatmap-weight": [
+          // Bubble size scales with absolute intensity
+          "circle-radius": [
+            "interpolate",
+            ["linear"],
+            ["abs", ["get", "intensity"]],
+            0,
+            4,
+            1,
+            10,
+            3,
+            22,
+          ],
+          // Color indicates positive / neutral / negative
+          "circle-color": [
             "interpolate",
             ["linear"],
             ["get", "intensity"],
-            -1,
+            -3,
+            "#ef4444", // strong negative (red)
+            -0.1,
+            "#f97316", // mild negative (orange)
             0,
-            0,
-            0.2,
-            1,
-            1,
+            "#eab308", // neutral (yellow)
+            0.1,
+            "#22c55e", // mild positive (green)
+            3,
+            "#22c55e", // strong positive (green)
           ],
-          "heatmap-intensity": 1.4,
-          "heatmap-radius": 20,
-          "heatmap-opacity": 0.95,
-          "heatmap-color": [
-            "interpolate",
-            ["linear"],
-            ["heatmap-density"],
-            0,
-            "rgba(15,23,42,0)",
-            0.2,
-            "rgba(63,81,181,0.7)",
-            0.4,
-            "rgba(56,189,248,0.9)",
-            0.6,
-            "rgba(34,197,94,0.9)",
-            0.8,
-            "rgba(250,204,21,0.95)",
-            1,
-            "rgba(248,113,113,1)",
-          ],
+          "circle-opacity": 0.5,
+          "circle-blur": 0,
         },
       });
     });
 
-    initializedRef.current = true;
-
     return () => {
       map.remove();
       mapRef.current = null;
-      initializedRef.current = false;
     };
-  }, [geoJson]);
+  }, []);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -95,7 +106,7 @@ const MapView = ({ geoJson }: Props) => {
     if (!map.getSource("sentiment")) return;
 
     try {
-      const source = map.getSource("sentiment") as mapboxgl.GeoJSONSource;
+      const source = map.getSource("sentiment") as maplibregl.GeoJSONSource;
       source.setData(geoJson);
 
       map.easeTo({
@@ -106,20 +117,6 @@ const MapView = ({ geoJson }: Props) => {
       // ignore
     }
   }, [geoJson]);
-
-  if (!process.env.NEXT_PUBLIC_MAPBOX_TOKEN) {
-    return (
-      <div className="flex h-full flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-black">
-        <p className="mb-1 text-xs font-medium uppercase tracking-[0.16em] text-zinc-500">
-          Mapbox token missing
-        </p>
-        <p className="max-w-xs text-center text-[11px] text-zinc-500">
-          Add <code className="text-[10px] text-zinc-300">NEXT_PUBLIC_MAPBOX_TOKEN</code>{" "}
-          to your environment to enable the live 2D map.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <div className="relative flex h-full flex-1 flex-col">
